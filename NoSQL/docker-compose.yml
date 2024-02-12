@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  python:
+    image: quay.io/jupyter/datascience-notebook
+    container_name: mypython
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    # user: root
+    # environment:
+    #   - JUPYTER_ENABLE_LAB=yes
+    ports:
+      - "8888:8888"
+    command: jupyter lab --NotebookApp.token='' --ip=0.0.0.0 --port=8888
+  redis:
+    image: redis
+    container_name: myredis
+    ports:
+      - "6379:6379"
+  mongo:
+    image: mongo:4
+    container_name: mymongo
+    ports:
+      - "27017:27017"
+      - "27018:27018"
+  orientdb:
+    image: orientdb:2.2
+    container_name: myorientdb
+    environment:
+      - ORIENTDB_ROOT_PASSWORD=root
+    ports:
+      - "2424:2424"
+      - "2480:2480"
