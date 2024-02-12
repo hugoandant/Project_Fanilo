@@ -11,6 +11,7 @@ You can acces to the interface at the adress: http://localhost:8501/
 Download the Nosql directory. 
 In your favorite command line go to the Nosql directory  and run : docker compose up --build.
 You can acces to the notebook on  Jupyter lab at the adress: http://localhost:8888/lab?
+Or just open the notebook locally..
 
 # Spark_eval
 ## Spark exerecices with docker
@@ -18,4 +19,5 @@ You can acces to the notebook on  Jupyter lab at the adress: http://localhost:88
 Download the Spark directory. 
 In your favorite command line go to the Spark directory  and run : docker compose up --build.
 You can acces to the notebook on  Jupyter lab at the adress: http://localhost:8888/lab?
+Or just open the notebook locally..
 
