@@ -5,9 +5,6 @@ Download the ML_project directory.
 In your favorite command line go to the ML_project directory  and run : docker compose up --build.
 You can acces to the interface at the adress: http://localhost:8501/
 
-# nosql_eval
-## no_sql exerecices with docker
-
 # Nosql_eval
 ## no_sql exerecices with docker
 
